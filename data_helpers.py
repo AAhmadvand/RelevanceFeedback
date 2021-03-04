@@ -320,7 +320,7 @@ def load_data_and_labels(max_query_length_prod, max_query_length, max_char_lengt
     set_words = set(vocabulary)
     count = 0
     for item in sorted(set_words):
-        if counts_tokens[item] > 2:
+        if counts_tokens[item] > 5:
             vocab[item] = count
             words_.add(item)
             count += 1
