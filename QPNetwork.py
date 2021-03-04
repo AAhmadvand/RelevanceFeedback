@@ -246,7 +246,7 @@ class QPNetwork(object):
                 ###########################################################################################################
                 
                             
-                values_all_1, self.indices_all_1 = tf.math.top_k(self.input_y_L6, k=10, sorted=True, name=None)
+                values_all_1, self.indices_all_1 = tf.math.top_k(self.input_y_L6, k=20, sorted=True, name=None)
                 values_true_1, self.indices_true_1= tf.math.top_k(self.input_y_L6, k=1, sorted=True, name=None)
                 values_pred_1, self.indices_pred_1 = tf.math.top_k(self.probs_L6, k=1, sorted=True, name=None)
 
@@ -273,7 +273,7 @@ class QPNetwork(object):
 
                 ###########################################################################################################
                 ###########################################################################################################
-                values_all_2, self.indices_all_2 = tf.math.top_k(self.input_y_L6, k=10, sorted=True, name=None)
+                values_all_2, self.indices_all_2 = tf.math.top_k(self.input_y_L6, k=20, sorted=True, name=None)
                 values_true_2, self.indices_true_2 = tf.math.top_k(self.input_y_L6, k=2, sorted=True, name=None)
                 values_pred_2, self.indices_pred_2 = tf.math.top_k(self.probs_L6, k=2, sorted=True, name=None)
 
@@ -301,7 +301,7 @@ class QPNetwork(object):
                 ###########################################################################################################
                 ###########################################################################################################
                 
-                values_all_3, self.indices_all_3 = tf.math.top_k(self.input_y_L6, k=10, sorted=True, name=None)
+                values_all_3, self.indices_all_3 = tf.math.top_k(self.input_y_L6, k=20, sorted=True, name=None)
                 values_true_3, self.indices_true_3 = tf.math.top_k(self.input_y_L6, k=3, sorted=True, name=None)
                 values_pred_3, self.indices_pred_3 = tf.math.top_k(self.probs_L6, k=3, sorted=True, name=None)
 
